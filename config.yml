@@ -7,9 +7,9 @@ discord_invite_url: null
 java_server_ip: play.priyxmc.fun
 bedrock_server_ip: null
 bedrock_port: 19132
-is_installed: true
+is_installed: false
 database_url: >-
-  postgresql://ea_skymadmean:17d922819ad7d23420c97c832f4f6fdaeeb61932@kjrq20.h.filess.io:61038/ea_skymadmean
+  postgresql://
 active_theme: default
 deco_asset_1: /vines.png
 deco_asset_2: /vines.png
