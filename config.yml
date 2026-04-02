@@ -1,0 +1,17 @@
+session_secret: BzOmBqi774cCh9TNgz95Zivrz69BumfMCLb7DweWEX5NiGDU7ifPNcCFz7XQ4fXa
+admin_password_hash: $2b$10$JrSn8nOWs2sBSXAKJnd8tOFPxAGvhvCnTjNhyfERgILSySBuZ208.
+tebex_public_token: 12b0t-372c1bc4c71764ef4d497b215ba3708b5467a18b
+tebex_private_key: vdglTNhbnXwt4EG6oGITRbffND6ONgpg
+site_name: PriyxMC
+discord_invite_url: null
+java_server_ip: play.priyxmc.fun
+bedrock_server_ip: null
+bedrock_port: 19132
+is_installed: true
+database_url: >-
+  postgresql://ea_skymadmean:17d922819ad7d23420c97c832f4f6fdaeeb61932@kjrq20.h.filess.io:61038/ea_skymadmean
+active_theme: default
+deco_asset_1: /vines.png
+deco_asset_2: /vines.png
+deco_asset_3: ''
+show_navbar_box: true

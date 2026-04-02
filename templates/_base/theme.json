@@ -1,0 +1,7 @@
+{
+  "name": "_base",
+  "displayName": "Base Theme (Template)",
+  "description": "A starter template for creating custom SnapTebex themes. Copy this folder and customize.",
+  "author": "SnapTebex",
+  "version": "1.0.0"
+}

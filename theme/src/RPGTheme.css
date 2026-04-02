@@ -1,0 +1,60 @@
+/* RPG Theme Styles */
+[data-theme="rpg"] {
+  --background: 28 45% 10%;
+  --foreground: 35 30% 90%;
+  --card: 28 35% 15%;
+  --card-foreground: 35 30% 90%;
+  --popover: 28 35% 15%;
+  --popover-foreground: 35 30% 90%;
+  --primary: 38 45% 55%; /* Gold/Bronze */
+  --primary-foreground: 28 45% 10%;
+  --secondary: 120 15% 20%; /* Dark Forest Green */
+  --secondary-foreground: 35 30% 90%;
+  --muted: 28 20% 20%;
+  --muted-foreground: 35 15% 70%;
+  --accent: 38 45% 55%;
+  --accent-foreground: 28 45% 10%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 35 30% 90%;
+  --border: 28 25% 25%;
+  --input: 28 25% 25%;
+  --ring: 38 45% 55%;
+  --radius: 0.125rem; /* Shorter radius for pixel feel */
+  
+  --font-sans: 'Cinzel', serif;
+  --font-display: 'Uncial Antiqua', serif;
+}
+
+[data-theme="rpg"] .glass-panel,
+[data-theme="rpg"] .glass-card {
+  background-color: hsla(28, 35%, 15%, 0.8) !important;
+  border: 2px solid hsla(38, 45%, 55%, 0.3) !important;
+  backdrop-filter: none !important;
+  box-shadow: 4px 4px 0px 0px hsla(28, 45%, 5%, 0.5) !important;
+  border-radius: 0 !important;
+}
+
+[data-theme="rpg"] .btn-glow,
+[data-theme="rpg"] .btn-float-glow {
+  border: 2px solid hsl(var(--primary)) !important;
+  border-radius: 0 !important;
+  background: hsl(var(--secondary)) !important;
+  color: hsl(var(--primary)) !important;
+  box-shadow: 3px 3px 0px 0px hsla(28, 45%, 5%, 0.5) !important;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+[data-theme="rpg"] .btn-glow:hover,
+[data-theme="rpg"] .btn-float-glow:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px hsla(28, 45%, 5%, 0.5) !important;
+}
+
+[data-theme="rpg"] .btn-glow:active,
+[data-theme="rpg"] .btn-float-glow:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px 0px hsla(28, 45%, 5%, 0.5) !important;
+}
+
+/* Medieval Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Uncial+Antiqua&display=swap');

@@ -1,0 +1,58 @@
+/*
+ * SnapTebex Base Theme
+ * Copy this file and customize the CSS variables below.
+ * The [data-theme="YOUR_THEME_NAME"] selector must match the folder name.
+ */
+
+[data-theme="YOUR_THEME_NAME"] {
+  /* Background & Foreground */
+  --background: 222 47% 11%;
+  --foreground: 210 40% 98%;
+
+  /* Card */
+  --card: 222 47% 13%;
+  --card-foreground: 210 40% 98%;
+
+  /* Popover */
+  --popover: 222 47% 13%;
+  --popover-foreground: 210 40% 98%;
+
+  /* Primary */
+  --primary: 217 91% 60%;
+  --primary-foreground: 222 47% 11%;
+
+  /* Secondary */
+  --secondary: 217 33% 17%;
+  --secondary-foreground: 210 40% 98%;
+
+  /* Muted */
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+
+  /* Accent */
+  --accent: 217 33% 17%;
+  --accent-foreground: 210 40% 98%;
+
+  /* Destructive */
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  /* Border / Input / Ring */
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --ring: 217 91% 60%;
+
+  /* Border Radius */
+  --radius: 0.5rem;
+
+  /* Optional: Custom Fonts (import via @import url() at the bottom) */
+  /* --font-sans: 'Inter', sans-serif; */
+  /* --font-display: 'Outfit', sans-serif; */
+}
+
+/* Optional: Override specific component styles */
+/*
+[data-theme="YOUR_THEME_NAME"] .glass-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+*/

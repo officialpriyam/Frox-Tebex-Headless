@@ -1,0 +1,118 @@
+/* RPG Theme Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Uncial+Antiqua&display=swap');
+
+[data-theme="rpg"] {
+  --background: 28 45% 10%;
+  --foreground: 35 30% 90%;
+  --card: 28 35% 15%;
+  --card-foreground: 35 30% 90%;
+  --popover: 28 35% 15%;
+  --popover-foreground: 35 30% 90%;
+  --primary: 38 45% 55%;
+  --primary-foreground: 28 45% 10%;
+  --secondary: 120 15% 20%;
+  --secondary-foreground: 35 30% 90%;
+  --muted: 28 20% 20%;
+  --muted-foreground: 35 15% 70%;
+  --accent: 38 45% 55%;
+  --accent-foreground: 28 45% 10%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 35 30% 90%;
+  --border: 28 25% 25%;
+  --input: 28 25% 25%;
+  --ring: 38 45% 55%;
+  --radius: 0.125rem;
+  
+  --font-sans: 'Cinzel', serif;
+  --font-display: 'Uncial Antiqua', serif;
+}
+
+/* RPG Background Image */
+[data-theme="rpg"] body {
+  background-image: url('https://i.pinimg.com/1200x/74/e8/e5/74e8e598e9f25ba73c5b63852cb381ac.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+[data-theme="rpg"] body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+  pointer-events: none;
+}
+
+[data-theme="rpg"] .glass-panel,
+[data-theme="rpg"] .glass-card {
+  background-color: hsla(28, 35%, 15%, 0.8) !important;
+  border: 2px solid hsla(38, 45%, 55%, 0.3) !important;
+  backdrop-filter: none !important;
+  box-shadow: 4px 4px 0px 0px hsla(28, 45%, 5%, 0.5) !important;
+  border-radius: 0 !important;
+}
+
+[data-theme="rpg"] .btn-glow,
+[data-theme="rpg"] .btn-float-glow {
+  border: 2px solid hsl(var(--primary)) !important;
+  border-radius: 0 !important;
+  background: hsl(var(--secondary)) !important;
+  color: hsl(var(--primary)) !important;
+  box-shadow: 3px 3px 0px 0px hsla(28, 45%, 5%, 0.5) !important;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+[data-theme="rpg"] .btn-glow:hover,
+[data-theme="rpg"] .btn-float-glow:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px hsla(28, 45%, 5%, 0.5) !important;
+}
+
+[data-theme="rpg"] .btn-glow:active,
+[data-theme="rpg"] .btn-float-glow:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px hsla(0,0%,0%,0.3) !important;
+}
+
+/* 3D Golden Corner Cut Covers for Navbar */
+[data-theme="rpg"] .theme-corner {
+  display: block !important;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #fcecae 0%, #e2b442 25%, #d19a22 50%, #9c6c06 80%, #634300 100%);
+  z-index: 20;
+  pointer-events: none;
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.7), inset -1px -1px 2px rgba(0,0,0,0.8), 0 0 5px rgba(0,0,0,0.5);
+  border: 1px solid #543700;
+}
+
+[data-theme="rpg"] .theme-corner-tl {
+  top: -2px; left: -2px;
+  clip-path: polygon(0 0, 100% 0, 50% 50%, 0 100%);
+  border-radius: 4px 0 0 0;
+}
+[data-theme="rpg"] .theme-corner-tr {
+  top: -2px; right: -2px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+  border-radius: 0 4px 0 0;
+}
+[data-theme="rpg"] .theme-corner-bl {
+  bottom: -2px; left: -2px;
+  clip-path: polygon(0 0, 50% 50%, 100% 100%, 0 100%);
+  border-radius: 0 0 0 4px;
+}
+[data-theme="rpg"] .theme-corner-br {
+  bottom: -2px; right: -2px;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 50% 50%);
+  border-radius: 0 0 4px 0;
+}
+
+[data-theme="rpg"] .navbar-container {
+  background: linear-gradient(135deg, rgba(15, 25, 45, 0.8), rgba(10, 15, 30, 0.9)) !important;
+  border: 2px solid hsla(40, 95%, 55%, 0.4) !important;
+  box-shadow: 0 8px 32px 0 hsla(0, 0%, 0%, 0.7), inset 0 0 20px hsla(40, 95%, 55%, 0.1) !important;
+  border-radius: 4px !important;
+}
